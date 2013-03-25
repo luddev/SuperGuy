@@ -3,6 +3,11 @@
 }
 
 
+States for State Machine.  
+
+
+
+
 {\ttfamily \#include $<$State\-Machine.\-h$>$}
 
 Inheritance diagram for state\-Machine\-:\begin{figure}[H]
@@ -17,16 +22,19 @@ Inheritance diagram for state\-Machine\-:\begin{figure}[H]
 virtual void \hyperlink{classstate_machine_a3fb12b413428098b6e98c0c1525db375}{handle\-\_\-events} ()
 \item 
 virtual void \hyperlink{classstate_machine_a3823bf8d9d05334eccc5d1d62a099714}{logic} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handle events for every state. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classstate_machine_adf943abf2ca060aa80746f2cdec4daf0}{render} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handle Logic for each state. \end{DoxyCompactList}\item 
 virtual \hyperlink{classstate_machine_afca4850a1876eed86643aed4cc529dc7}{$\sim$state\-Machine} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Handle rendering for each state. \end{DoxyCompactList}\item 
 void \hyperlink{classstate_machine_aa37b1c8ff364025c2a1f82d92f9a1ce0}{set\-Next\-State} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destructor for each state. \end{DoxyCompactList}\item 
 void \hyperlink{classstate_machine_a81432eab64611f3d7ac5338aee324257}{change\-State} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets our next state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+States for State Machine. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classstate_machine_afca4850a1876eed86643aed4cc529dc7}{\index{state\-Machine@{state\-Machine}!$\sim$state\-Machine@{$\sim$state\-Machine}}
@@ -38,6 +46,10 @@ void \hyperlink{classstate_machine_a81432eab64611f3d7ac5338aee324257}{change\-St
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classstate_machine_afca4850a1876eed86643aed4cc529dc7}
 
 
+Handle rendering for each state. 
+
+
+
 \subsection{Member Function Documentation}
 \hypertarget{classstate_machine_a81432eab64611f3d7ac5338aee324257}{\index{state\-Machine@{state\-Machine}!change\-State@{change\-State}}
 \index{change\-State@{change\-State}!stateMachine@{state\-Machine}}
@@ -46,6 +58,10 @@ void \hyperlink{classstate_machine_a81432eab64611f3d7ac5338aee324257}{change\-St
 {}
 \end{DoxyParamCaption}
 )}}\label{classstate_machine_a81432eab64611f3d7ac5338aee324257}
+
+
+Sets our next state. 
+
 \hypertarget{classstate_machine_a3fb12b413428098b6e98c0c1525db375}{\index{state\-Machine@{state\-Machine}!handle\-\_\-events@{handle\-\_\-events}}
 \index{handle\-\_\-events@{handle\-\_\-events}!stateMachine@{state\-Machine}}
 \subsubsection[{handle\-\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}virtual void state\-Machine\-::handle\-\_\-events (
@@ -66,6 +82,10 @@ Reimplemented in \hyperlink{class_game_over_ac983ca4c0d92982da2f27a1a3758d91e}{G
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classstate_machine_a3823bf8d9d05334eccc5d1d62a099714}
 
 
+Handle events for every state. 
+
+
+
 Reimplemented in \hyperlink{class_game_over_a4ff51266107ff11b3b10a2e0187eb3f6}{Game\-Over}, \hyperlink{class_stage1_ae7fe27770d40d654297f044e693af030}{Stage1}, \hyperlink{class_title_a530e17f16f634a0385a8d37ed6a57104}{Title}, and \hyperlink{class_intro_abca960766a7e6e977be5e56e59637afd}{Intro}.
 
 \hypertarget{classstate_machine_adf943abf2ca060aa80746f2cdec4daf0}{\index{state\-Machine@{state\-Machine}!render@{render}}
@@ -77,6 +97,10 @@ Reimplemented in \hyperlink{class_game_over_a4ff51266107ff11b3b10a2e0187eb3f6}{G
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classstate_machine_adf943abf2ca060aa80746f2cdec4daf0}
 
 
+Handle Logic for each state. 
+
+
+
 Reimplemented in \hyperlink{class_game_over_acaf9a4bea8b0e3e051d58b9ff4c80bec}{Game\-Over}, \hyperlink{class_stage1_a60be0ff24305d7d018219f985b5b9323}{Stage1}, \hyperlink{class_title_a4a9fe899fdb92d6d82bbb88b949cdeaf}{Title}, and \hyperlink{class_intro_afa2ad2d82a78c9fbc38c1fdeeae80992}{Intro}.
 
 \hypertarget{classstate_machine_aa37b1c8ff364025c2a1f82d92f9a1ce0}{\index{state\-Machine@{state\-Machine}!set\-Next\-State@{set\-Next\-State}}
@@ -86,6 +110,10 @@ Reimplemented in \hyperlink{class_game_over_acaf9a4bea8b0e3e051d58b9ff4c80bec}{G
 {}
 \end{DoxyParamCaption}
 )}}\label{classstate_machine_aa37b1c8ff364025c2a1f82d92f9a1ce0}
+
+
+Destructor for each state. 
+
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}

@@ -7,6 +7,11 @@ var annotated =
     [ "enemyDuck", "classenemy_duck.html", "classenemy_duck" ],
     [ "engine", "classengine.html", "classengine" ],
     [ "eventHandler", "classevent_handler.html", null ],
+    [ "GameOver", "class_game_over.html", "class_game_over" ],
+    [ "Intro", "class_intro.html", "class_intro" ],
     [ "log", "classlog.html", "classlog" ],
-    [ "texture", "classtexture.html", "classtexture" ]
+    [ "Stage1", "class_stage1.html", "class_stage1" ],
+    [ "stateMachine", "classstate_machine.html", "classstate_machine" ],
+    [ "texture", "classtexture.html", "classtexture" ],
+    [ "Title", "class_title.html", "class_title" ]
 ];

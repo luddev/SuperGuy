@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('classstate_machine.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,6 +107,9 @@ $(document).ready(function(){initNavTree('classstate_machine.html','');});
 <div class="title">stateMachine Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>States for State Machine.  
+ <a href="classstate_machine.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -126,12 +129,19 @@ Inheritance diagram for stateMachine:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3fb12b413428098b6e98c0c1525db375"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate_machine.html#a3fb12b413428098b6e98c0c1525db375">handle_events</a> ()</td></tr>
 <tr class="memitem:a3823bf8d9d05334eccc5d1d62a099714"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate_machine.html#a3823bf8d9d05334eccc5d1d62a099714">logic</a> ()</td></tr>
+<tr class="memdesc:a3823bf8d9d05334eccc5d1d62a099714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle events for every state.  <a href="#a3823bf8d9d05334eccc5d1d62a099714"></a><br/></td></tr>
 <tr class="memitem:adf943abf2ca060aa80746f2cdec4daf0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate_machine.html#adf943abf2ca060aa80746f2cdec4daf0">render</a> ()</td></tr>
+<tr class="memdesc:adf943abf2ca060aa80746f2cdec4daf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle Logic for each state.  <a href="#adf943abf2ca060aa80746f2cdec4daf0"></a><br/></td></tr>
 <tr class="memitem:afca4850a1876eed86643aed4cc529dc7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate_machine.html#afca4850a1876eed86643aed4cc529dc7">~stateMachine</a> ()</td></tr>
+<tr class="memdesc:afca4850a1876eed86643aed4cc529dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle rendering for each state.  <a href="#afca4850a1876eed86643aed4cc529dc7"></a><br/></td></tr>
 <tr class="memitem:aa37b1c8ff364025c2a1f82d92f9a1ce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate_machine.html#aa37b1c8ff364025c2a1f82d92f9a1ce0">setNextState</a> ()</td></tr>
+<tr class="memdesc:aa37b1c8ff364025c2a1f82d92f9a1ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for each state.  <a href="#aa37b1c8ff364025c2a1f82d92f9a1ce0"></a><br/></td></tr>
 <tr class="memitem:a81432eab64611f3d7ac5338aee324257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstate_machine.html#a81432eab64611f3d7ac5338aee324257">changeState</a> ()</td></tr>
+<tr class="memdesc:a81432eab64611f3d7ac5338aee324257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets our next state.  <a href="#a81432eab64611f3d7ac5338aee324257"></a><br/></td></tr>
 </table>
-<h2>Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>States for State Machine. </p>
+</div><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afca4850a1876eed86643aed4cc529dc7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -153,6 +163,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handle rendering for each state. </p>
+
 </div>
 </div>
 <h2>Member Function Documentation</h2>
@@ -168,6 +180,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets our next state. </p>
 
 </div>
 </div>
@@ -217,6 +231,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handle events for every state. </p>
+
 <p>Reimplemented in <a class="el" href="class_game_over.html#a4ff51266107ff11b3b10a2e0187eb3f6">GameOver</a>, <a class="el" href="class_stage1.html#ae7fe27770d40d654297f044e693af030">Stage1</a>, <a class="el" href="class_title.html#a530e17f16f634a0385a8d37ed6a57104">Title</a>, and <a class="el" href="class_intro.html#abca960766a7e6e977be5e56e59637afd">Intro</a>.</p>
 
 </div>
@@ -242,6 +258,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Handle Logic for each state. </p>
+
 <p>Reimplemented in <a class="el" href="class_game_over.html#acaf9a4bea8b0e3e051d58b9ff4c80bec">GameOver</a>, <a class="el" href="class_stage1.html#a60be0ff24305d7d018219f985b5b9323">Stage1</a>, <a class="el" href="class_title.html#a4a9fe899fdb92d6d82bbb88b949cdeaf">Title</a>, and <a class="el" href="class_intro.html#afa2ad2d82a78c9fbc38c1fdeeae80992">Intro</a>.</p>
 
 </div>
@@ -259,6 +277,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Destructor for each state. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -270,7 +290,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classstate_machine.html">stateMachine</a></li>
-    <li class="footer">Generated on Mon Mar 25 2013 11:20:27 for SuperGuy by
+    <li class="footer">Generated on Mon Mar 25 2013 11:31:47 for SuperGuy by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
