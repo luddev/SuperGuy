@@ -7,14 +7,9 @@
 
 #ifndef ENEMY_H_
 #define ENEMY_H_
+#include"AIEntity.h"
+class enemyAnt: public aiEntity {
 
-class enemyAnt {
-private:
-	SDL_Rect ant;
-	int speedX;
-	int speedY;
-	float alpha;
-	float rotation;
 public:
 	enemyAnt();
 	~enemyAnt();

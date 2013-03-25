@@ -7,14 +7,8 @@
 
 #ifndef ENEMY_DUCK_H_
 #define ENEMY_DUCK_H_
-
-class enemyDuck {
-private:
-	SDL_Rect duck;
-	int speedX;
-	int speedY;
-	float alpha;
-	float rotation;
+#include"AIEntity.h"
+class enemyDuck: public aiEntity {
 public:
 	enemyDuck();
 	~enemyDuck();

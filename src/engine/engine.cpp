@@ -8,7 +8,8 @@
 #include <iostream>
 #include "engine.h"
 #include "../log.h"
-
+#include<SDL2/SDL_surface.h>
+#include<SDL2/SDL.h>
 void engine::init_sdl() {
 	int ret = 0;
 	log::info("Initializing SDL2...");
