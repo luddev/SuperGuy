@@ -12,8 +12,8 @@
 #include <ctime>
 #include <cstring>
 
-FILE * fp = NULL;
 static char buf[80];
+FILE * fp = NULL;
 
 static char * getTime() {
 	time_t rawtime;

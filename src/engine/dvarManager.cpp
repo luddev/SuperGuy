@@ -7,7 +7,6 @@
 
 #include "dvarManager.h"
 #include "../log.h"
-#include<stdio.h>
 
 void dvarManager::load(const char* file) {
 	FILE * fp = fopen(file, "rt");
