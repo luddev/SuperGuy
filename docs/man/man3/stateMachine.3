@@ -1,0 +1,60 @@
+.TH "stateMachine" 3 "Mon Mar 25 2013" "SuperGuy" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+stateMachine \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <StateMachine\&.h>\fP
+.PP
+Inherited by \fBGameOver\fP, \fBIntro\fP, \fBStage1\fP, and \fBTitle\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBhandle_events\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBlogic\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBrender\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~stateMachine\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNextState\fP ()"
+.br
+.ti -1c
+.RI "void \fBchangeState\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual stateMachine::~stateMachine ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void stateMachine::changeState ()"
+
+.SS "virtual void stateMachine::handle_events ()\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGameOver\fP, \fBStage1\fP, \fBTitle\fP, and \fBIntro\fP\&.
+.SS "virtual void stateMachine::logic ()\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGameOver\fP, \fBStage1\fP, \fBTitle\fP, and \fBIntro\fP\&.
+.SS "virtual void stateMachine::render ()\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBGameOver\fP, \fBStage1\fP, \fBTitle\fP, and \fBIntro\fP\&.
+.SS "void stateMachine::setNextState ()"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SuperGuy from the source code\&.

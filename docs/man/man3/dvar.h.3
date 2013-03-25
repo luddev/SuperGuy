@@ -1,0 +1,83 @@
+.TH "/home/ludkiller/projects/SuperGuy/src/engine/dvar.h" 3 "Mon Mar 25 2013" "SuperGuy" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ludkiller/projects/SuperGuy/src/engine/dvar.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "union \fBdvar_value\fP"
+.br
+.ti -1c
+.RI "class \fBdvar\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fBdvar_flag\fP \fBdvar_flag_t\fP"
+.br
+.ti -1c
+.RI "typedef enum \fBdvar_type\fP \fBdvar_type_t\fP"
+.br
+.ti -1c
+.RI "typedef union \fBdvar_value\fP \fBdvar_value_t\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBdvar_flag\fP { \fBDVAR_FLAG_NONE\fP =  0x00, \fBDVAR_FLAG_SAVE\fP =  0x01, \fBDVAR_FLAG_READONLY\fP =  0x02, \fBDVAR_FLAG_CHEAT\fP =  0x04 }"
+.br
+.ti -1c
+.RI "enum \fBdvar_type\fP { \fBDVAR_TYPE_INT\fP, \fBDVAR_TYPE_STRING\fP, \fBDVAR_TYPE_DOUBLE\fP }"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef enum \fBdvar_flag\fP  \fBdvar_flag_t\fP"
+
+.SS "typedef enum \fBdvar_type\fP  \fBdvar_type_t\fP"
+
+.SS "typedef union \fBdvar_value\fP  \fBdvar_value_t\fP"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBdvar_flag\fP"
+
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIDVAR_FLAG_NONE \fP\fP
+.TP
+\fB\fIDVAR_FLAG_SAVE \fP\fP
+.TP
+\fB\fIDVAR_FLAG_READONLY \fP\fP
+.TP
+\fB\fIDVAR_FLAG_CHEAT \fP\fP
+
+.SS "enum \fBdvar_type\fP"
+
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIDVAR_TYPE_INT \fP\fP
+.TP
+\fB\fIDVAR_TYPE_STRING \fP\fP
+.TP
+\fB\fIDVAR_TYPE_DOUBLE \fP\fP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SuperGuy from the source code\&.

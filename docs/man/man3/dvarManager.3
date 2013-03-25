@@ -1,0 +1,47 @@
+.TH "dvarManager" 3 "Mon Mar 25 2013" "SuperGuy" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+dvarManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dvarManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBdvarManager\fP (const char *file)"
+.br
+.ti -1c
+.RI "\fB~dvarManager\fP ()"
+.br
+.ti -1c
+.RI "void \fBregisterDvar\fP (\fBdvar\fP *\fBdvar\fP)"
+.br
+.ti -1c
+.RI "bool \fBremoveDvar\fP (const char *name)"
+.br
+.ti -1c
+.RI "\fBdvar\fP * \fBGetDvar\fP (const char *name)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "dvarManager::dvarManager (const char *file)"
+
+.SS "dvarManager::~dvarManager ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBdvar\fP * dvarManager::GetDvar (const char *name)"
+
+.SS "void dvarManager::registerDvar (\fBdvar\fP *dvar)"
+
+.SS "bool dvarManager::removeDvar (const char *name)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SuperGuy from the source code\&.
