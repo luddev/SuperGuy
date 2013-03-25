@@ -18,3 +18,8 @@ License
 -------
 
 FreeBSD - See COPYING
+
+Documentation
+-------------
+
+Please refer to doxygen documentation at http://ludkiller.github.com/SuperGuy/doxygen/
