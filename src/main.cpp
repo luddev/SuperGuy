@@ -5,6 +5,19 @@
  * Description : 
  * ============================================================================ */
 
+/*! \mainpage SuperGuy
+ *
+ * \section intro_sec Introduction
+ *
+ * A SuperMario themed clone with 8 bit Music.
+ *
+ * \section install_sec Installation
+ *
+ * \subsection step1 Step 1: Download
+ *
+ *
+ */
+
 #include <iostream>
 #include <SDL2/SDL.h>
 #include "log.h"
