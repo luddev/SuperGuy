@@ -3,16 +3,13 @@
 .nh
 .SH NAME
 stateMachine \- 
-.PP
-States for State Machine\&.  
-
 .SH SYNOPSIS
 .br
 .PP
 .PP
 \fC#include <StateMachine\&.h>\fP
 .PP
-Inherited by \fBGameOver\fP, \fBIntro\fP, \fBStage1\fP, and \fBTitle\fP\&.
+Inherited by \fBGameOver\fP, \fBIntro\fP, \fBOverWorld\fP, \fBStage1\fP, and \fBTitle\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -31,18 +28,7 @@ Inherited by \fBGameOver\fP, \fBIntro\fP, \fBStage1\fP, and \fBTitle\fP\&.
 .RI "virtual \fB~stateMachine\fP ()"
 .br
 .RI "\fIHandle rendering for each state\&. \fP"
-.ti -1c
-.RI "void \fBsetNextState\fP ()"
-.br
-.RI "\fIDestructor for each state\&. \fP"
-.ti -1c
-.RI "void \fBchangeState\fP ()"
-.br
-.RI "\fISets our next state\&. \fP"
 .in -1c
-.SH "Detailed Description"
-.PP 
-States for State Machine\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "virtual stateMachine::~stateMachine ()\fC [virtual]\fP"
@@ -51,10 +37,6 @@ States for State Machine\&.
 Handle rendering for each state\&. 
 .SH "Member Function Documentation"
 .PP 
-.SS "void stateMachine::changeState ()"
-
-.PP
-Sets our next state\&. 
 .SS "virtual void stateMachine::handle_events ()\fC [virtual]\fP"
 
 .PP
@@ -71,10 +53,6 @@ Reimplemented in \fBGameOver\fP, \fBStage1\fP, \fBTitle\fP, and \fBIntro\fP\&.
 Handle Logic for each state\&. 
 .PP
 Reimplemented in \fBGameOver\fP, \fBStage1\fP, \fBTitle\fP, and \fBIntro\fP\&.
-.SS "void stateMachine::setNextState ()"
-
-.PP
-Destructor for each state\&. 
 
 .SH "Author"
 .PP 

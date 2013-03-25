@@ -11,6 +11,7 @@ var hierarchy =
     [ "stateMachine", "classstate_machine.html", [
       [ "GameOver", "class_game_over.html", null ],
       [ "Intro", "class_intro.html", null ],
+      [ "OverWorld", "class_over_world.html", null ],
       [ "Stage1", "class_stage1.html", null ],
       [ "Title", "class_title.html", null ]
     ] ],

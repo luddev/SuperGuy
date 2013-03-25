@@ -1,14 +1,17 @@
 \hypertarget{_state_machine_8h}{\section{/home/ludkiller/projects/\-Super\-Guy/src/\-State\-Machine/\-State\-Machine.h File Reference}
 \label{_state_machine_8h}\index{/home/ludkiller/projects/\-Super\-Guy/src/\-State\-Machine/\-State\-Machine.\-h@{/home/ludkiller/projects/\-Super\-Guy/src/\-State\-Machine/\-State\-Machine.\-h}}
 }
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classstate_machine}{state\-Machine}
-\begin{DoxyCompactList}\small\item\em States for State Machine. \end{DoxyCompactList}\item 
+\item 
 class \hyperlink{class_intro}{Intro}
 \item 
 class \hyperlink{class_title}{Title}
+\item 
+class \hyperlink{class_over_world}{Over\-World}
 \item 
 class \hyperlink{class_stage1}{Stage1}
 \item 
@@ -21,11 +24,29 @@ enum \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9}{S\-T\-A\-T\
 \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a0980ed83de990f1099d3537bb6b6df24}{S\-T\-A\-T\-E\-\_\-\-N\-U\-L\-L}, 
 \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9adf397e69e21e60d8992d8f492436a3ad}{S\-T\-A\-T\-E\-\_\-\-I\-N\-T\-R\-O}, 
 \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a0079bd1b6491096cefae97276883f6c7}{S\-T\-A\-T\-E\-\_\-\-T\-I\-T\-L\-E}, 
-\hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9ab1fde2369f5073d019cde43049495d6a}{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1}, 
+\hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a245d5b3b128c9b54b8f53f781eae8c90}{S\-T\-A\-T\-E\-\_\-\-O\-V\-E\-R\-W\-O\-R\-L\-D}, 
 \\*
+\hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9ab1fde2369f5073d019cde43049495d6a}{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1}, 
+\hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a663336183a55766c5894a1c203919354}{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E2}, 
 \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a499befd644d29b7940f5d95ed90a83c3}{S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R}, 
 \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9aaa31548ade48c0ad04f505fde3c06352}{S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T}
  \}
+\begin{DoxyCompactList}\small\item\em States for State Machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_state_machine_8h_a8aa46e9944fc70650a3c456180884fbd}{set\-Next\-State} (int new\-State)
+\item 
+void \hyperlink{_state_machine_8h_ab813c6f8436492261f3869d21ded2f17}{change\-State} ()
+\begin{DoxyCompactList}\small\item\em Sets our next state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_state_machine_8h_a211e09d070607ec6a0e1dce36816f436}{state\-I\-D} = \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a0980ed83de990f1099d3537bb6b6df24}{S\-T\-A\-T\-E\-\_\-\-N\-U\-L\-L}
+\item 
+int \hyperlink{_state_machine_8h_a18e5a6ae4af63222c56c48bdb1161080}{next\-State} = \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a0980ed83de990f1099d3537bb6b6df24}{S\-T\-A\-T\-E\-\_\-\-N\-U\-L\-L}
+\item 
+\hyperlink{classstate_machine}{state\-Machine} $\ast$ \hyperlink{_state_machine_8h_acc5600ece6702d2dbf94c1d25a1a454f}{current\-State} = N\-U\-L\-L
 \end{DoxyCompactItemize}
 
 
@@ -33,6 +54,10 @@ enum \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9}{S\-T\-A\-T\
 \hypertarget{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9}{\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-S@{S\-T\-A\-T\-E\-S}}
 \index{S\-T\-A\-T\-E\-S@{S\-T\-A\-T\-E\-S}!StateMachine.h@{State\-Machine.\-h}}
 \subsubsection[{S\-T\-A\-T\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\-T\-A\-T\-E\-S}}}\label{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9}
+
+
+States for State Machine. 
+
 \begin{Desc}
 \item[Enumerator\-: ]\par
 \begin{description}
@@ -42,12 +67,49 @@ enum \hyperlink{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9}{S\-T\-A\-T\
 \hypertarget{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9adf397e69e21e60d8992d8f492436a3ad}{S\-T\-A\-T\-E\-\_\-\-I\-N\-T\-R\-O}\label{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9adf397e69e21e60d8992d8f492436a3ad}
 }]N\-U\-L\-L S\-T\-A\-T\-E. \index{S\-T\-A\-T\-E\-\_\-\-T\-I\-T\-L\-E@{S\-T\-A\-T\-E\-\_\-\-T\-I\-T\-L\-E}!State\-Machine.\-h@{State\-Machine.\-h}}\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-\_\-\-T\-I\-T\-L\-E@{S\-T\-A\-T\-E\-\_\-\-T\-I\-T\-L\-E}}\item[{\em 
 \hypertarget{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a0079bd1b6491096cefae97276883f6c7}{S\-T\-A\-T\-E\-\_\-\-T\-I\-T\-L\-E}\label{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a0079bd1b6491096cefae97276883f6c7}
-}]I\-N\-T\-R\-O or S\-P\-L\-A\-S\-H S\-C\-R\-E\-E\-N S\-T\-A\-T\-E. \index{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1@{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1}!State\-Machine.\-h@{State\-Machine.\-h}}\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1@{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1}}\item[{\em 
+}]I\-N\-T\-R\-O or S\-P\-L\-A\-S\-H S\-C\-R\-E\-E\-N S\-T\-A\-T\-E. \index{S\-T\-A\-T\-E\-\_\-\-O\-V\-E\-R\-W\-O\-R\-L\-D@{S\-T\-A\-T\-E\-\_\-\-O\-V\-E\-R\-W\-O\-R\-L\-D}!State\-Machine.\-h@{State\-Machine.\-h}}\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-\_\-\-O\-V\-E\-R\-W\-O\-R\-L\-D@{S\-T\-A\-T\-E\-\_\-\-O\-V\-E\-R\-W\-O\-R\-L\-D}}\item[{\em 
+\hypertarget{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a245d5b3b128c9b54b8f53f781eae8c90}{S\-T\-A\-T\-E\-\_\-\-O\-V\-E\-R\-W\-O\-R\-L\-D}\label{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a245d5b3b128c9b54b8f53f781eae8c90}
+}]T\-I\-T\-L\-E S\-T\-A\-T\-E. \index{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1@{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1}!State\-Machine.\-h@{State\-Machine.\-h}}\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1@{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1}}\item[{\em 
 \hypertarget{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9ab1fde2369f5073d019cde43049495d6a}{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E1}\label{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9ab1fde2369f5073d019cde43049495d6a}
-}]T\-I\-T\-L\-E S\-T\-A\-T\-E. \index{S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R@{S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R}!State\-Machine.\-h@{State\-Machine.\-h}}\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R@{S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R}}\item[{\em 
+}]\index{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E2@{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E2}!State\-Machine.\-h@{State\-Machine.\-h}}\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E2@{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E2}}\item[{\em 
+\hypertarget{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a663336183a55766c5894a1c203919354}{S\-T\-A\-T\-E\-\_\-\-S\-T\-A\-G\-E2}\label{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a663336183a55766c5894a1c203919354}
+}]S\-T\-A\-G\-E1 can add other Stages later similar to S\-T\-A\-G\-E1. \index{S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R@{S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R}!State\-Machine.\-h@{State\-Machine.\-h}}\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R@{S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R}}\item[{\em 
 \hypertarget{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a499befd644d29b7940f5d95ed90a83c3}{S\-T\-A\-T\-E\-\_\-\-G\-A\-M\-E\-O\-V\-E\-R}\label{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9a499befd644d29b7940f5d95ed90a83c3}
-}]S\-T\-A\-G\-E1 can add other Stages later similar to S\-T\-A\-G\-E1. \index{S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T@{S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T}!State\-Machine.\-h@{State\-Machine.\-h}}\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T@{S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T}}\item[{\em 
+}]\index{S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T@{S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T}!State\-Machine.\-h@{State\-Machine.\-h}}\index{State\-Machine.\-h@{State\-Machine.\-h}!S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T@{S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T}}\item[{\em 
 \hypertarget{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9aaa31548ade48c0ad04f505fde3c06352}{S\-T\-A\-T\-E\-\_\-\-Q\-U\-I\-T}\label{_state_machine_8h_a94b1da2e055fff4d143aa6aa891f79a9aaa31548ade48c0ad04f505fde3c06352}
 }]G\-A\-M\-E\-O\-V\-E\-R self explanatory. Q\-U\-I\-T After Game over or random quit ;3 \end{description}
 \end{Desc}
 
+
+
+\subsection{Function Documentation}
+\hypertarget{_state_machine_8h_ab813c6f8436492261f3869d21ded2f17}{\index{State\-Machine.\-h@{State\-Machine.\-h}!change\-State@{change\-State}}
+\index{change\-State@{change\-State}!StateMachine.h@{State\-Machine.\-h}}
+\subsubsection[{change\-State}]{\setlength{\rightskip}{0pt plus 5cm}void change\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_state_machine_8h_ab813c6f8436492261f3869d21ded2f17}
+
+
+Sets our next state. 
+
+\hypertarget{_state_machine_8h_a8aa46e9944fc70650a3c456180884fbd}{\index{State\-Machine.\-h@{State\-Machine.\-h}!set\-Next\-State@{set\-Next\-State}}
+\index{set\-Next\-State@{set\-Next\-State}!StateMachine.h@{State\-Machine.\-h}}
+\subsubsection[{set\-Next\-State}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Next\-State (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-State}
+\end{DoxyParamCaption}
+)}}\label{_state_machine_8h_a8aa46e9944fc70650a3c456180884fbd}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_state_machine_8h_acc5600ece6702d2dbf94c1d25a1a454f}{\index{State\-Machine.\-h@{State\-Machine.\-h}!current\-State@{current\-State}}
+\index{current\-State@{current\-State}!StateMachine.h@{State\-Machine.\-h}}
+\subsubsection[{current\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf state\-Machine}$\ast$ current\-State = N\-U\-L\-L}}\label{_state_machine_8h_acc5600ece6702d2dbf94c1d25a1a454f}
+\hypertarget{_state_machine_8h_a18e5a6ae4af63222c56c48bdb1161080}{\index{State\-Machine.\-h@{State\-Machine.\-h}!next\-State@{next\-State}}
+\index{next\-State@{next\-State}!StateMachine.h@{State\-Machine.\-h}}
+\subsubsection[{next\-State}]{\setlength{\rightskip}{0pt plus 5cm}int next\-State = {\bf S\-T\-A\-T\-E\-\_\-\-N\-U\-L\-L}}}\label{_state_machine_8h_a18e5a6ae4af63222c56c48bdb1161080}
+\hypertarget{_state_machine_8h_a211e09d070607ec6a0e1dce36816f436}{\index{State\-Machine.\-h@{State\-Machine.\-h}!state\-I\-D@{state\-I\-D}}
+\index{state\-I\-D@{state\-I\-D}!StateMachine.h@{State\-Machine.\-h}}
+\subsubsection[{state\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int state\-I\-D = {\bf S\-T\-A\-T\-E\-\_\-\-N\-U\-L\-L}}}\label{_state_machine_8h_a211e09d070607ec6a0e1dce36816f436}

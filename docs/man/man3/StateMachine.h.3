@@ -6,18 +6,23 @@
 .SH SYNOPSIS
 .br
 .PP
+\fC#include <stdio\&.h>\fP
+.br
+
 .SS "Classes"
 
 .in +1c
 .ti -1c
 .RI "class \fBstateMachine\fP"
 .br
-.RI "\fIStates for State Machine\&. \fP"
 .ti -1c
 .RI "class \fBIntro\fP"
 .br
 .ti -1c
 .RI "class \fBTitle\fP"
+.br
+.ti -1c
+.RI "class \fBOverWorld\fP"
 .br
 .ti -1c
 .RI "class \fBStage1\fP"
@@ -30,13 +35,40 @@
 
 .in +1c
 .ti -1c
-.RI "enum \fBSTATES\fP { \fBSTATE_NULL\fP, \fBSTATE_INTRO\fP, \fBSTATE_TITLE\fP, \fBSTATE_STAGE1\fP, \fBSTATE_GAMEOVER\fP, \fBSTATE_QUIT\fP }"
+.RI "enum \fBSTATES\fP { \fBSTATE_NULL\fP, \fBSTATE_INTRO\fP, \fBSTATE_TITLE\fP, \fBSTATE_OVERWORLD\fP, \fBSTATE_STAGE1\fP, \fBSTATE_STAGE2\fP, \fBSTATE_GAMEOVER\fP, \fBSTATE_QUIT\fP }"
+.br
+.RI "\fIStates for State Machine\&. \fP"
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetNextState\fP (int newState)"
+.br
+.ti -1c
+.RI "void \fBchangeState\fP ()"
+.br
+.RI "\fISets our next state\&. \fP"
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBstateID\fP = \fBSTATE_NULL\fP"
+.br
+.ti -1c
+.RI "int \fBnextState\fP = \fBSTATE_NULL\fP"
+.br
+.ti -1c
+.RI "\fBstateMachine\fP * \fBcurrentState\fP = NULL"
 .br
 .in -1c
 .SH "Enumeration Type Documentation"
 .PP 
 .SS "enum \fBSTATES\fP"
 
+.PP
+States for State Machine\&. 
 .PP
 \fBEnumerator: \fP
 .in +1c
@@ -49,14 +81,34 @@ NULL STATE\&.
 \fB\fISTATE_TITLE \fP\fP
 INTRO or SPLASH SCREEN STATE\&. 
 .TP
-\fB\fISTATE_STAGE1 \fP\fP
+\fB\fISTATE_OVERWORLD \fP\fP
 TITLE STATE\&. 
 .TP
-\fB\fISTATE_GAMEOVER \fP\fP
+\fB\fISTATE_STAGE1 \fP\fP
+.TP
+\fB\fISTATE_STAGE2 \fP\fP
 STAGE1 can add other Stages later similar to STAGE1\&. 
+.TP
+\fB\fISTATE_GAMEOVER \fP\fP
 .TP
 \fB\fISTATE_QUIT \fP\fP
 GAMEOVER self explanatory\&. QUIT After Game over or random quit ;3 
+.SH "Function Documentation"
+.PP 
+.SS "void changeState ()"
+
+.PP
+Sets our next state\&. 
+.SS "void setNextState (intnewState)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBstateMachine\fP* currentState = NULL"
+
+.SS "int nextState = \fBSTATE_NULL\fP"
+
+.SS "int stateID = \fBSTATE_NULL\fP"
+
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for SuperGuy from the source code\&.
