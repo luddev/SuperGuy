@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['gameover',['GameOver',['../class_game_over.html',1,'GameOver'],['../class_game_over.html#a0ff11ac73026d574c5b393e825f10a1b',1,'GameOver::GameOver()']]],
   ['getdefvalue',['getDefValue',['../classdvar.html#a8254f32e9b4584de927129f2638f4cd5',1,'dvar']]],
   ['getdesc',['getDesc',['../classdvar.html#aa86e31b99dbb05d6b1a4e6f91e5d20e2',1,'dvar']]],
   ['getdvar',['GetDvar',['../classdvar_manager.html#a76beeb6a64611ae7ca547f39e2bc8b9c',1,'dvarManager']]],
