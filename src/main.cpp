@@ -22,8 +22,11 @@
 #include <SDL2/SDL.h>
 #include "log.h"
 #include "engine/engine.h"
+#include "StateMachine/StateMachine.h"
 
 int main(int argc, char ** argv) {
+	stateID = STATE_INTRO;
+	currentState = new Intro();
 	engine * eng = NULL;
 	log::open("log.txt");
 
@@ -38,6 +41,22 @@ int main(int argc, char ** argv) {
 			delete eng;
 		log::error("Engine crashed!");
 	}
+	 while( stateID != STATE_QUIT )
+	    {
+
+	        //Do state event handling
+	        currentState->handle_events();
+
+	        //Do state logic
+	        currentState->logic();
+
+	        //Change state if needed
+	        changeState();
+
+	        //Do state rendering
+	        currentState->render();
+	    }
+
 
 	log::close();
 	return 0;
