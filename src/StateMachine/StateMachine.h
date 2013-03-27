@@ -31,10 +31,10 @@ enum STATES {
 
 class stateMachine {
 public:
-	virtual void handle_events(); ///Handle events for every state
-	virtual void logic(); ///Handle Logic for each state
-	virtual void render(); ///Handle rendering for each state
-	virtual ~stateMachine(); ///Destructor for each state
+	virtual void handle_events() = 0; ///Handle events for every state
+	virtual void logic() = 0; ///Handle Logic for each state
+	virtual void render() = 0; ///Handle rendering for each state
+	virtual ~stateMachine() = 0; ///Destructor for each state
 };
 
 class Intro: public stateMachine {
@@ -66,6 +66,10 @@ public:
 class OverWorld:public stateMachine {
 	OverWorld(int);
 	~OverWorld();
+	void handle_events();
+	void logic();
+	void render();
+
 };
 class Stage1: public stateMachine {
 private:
