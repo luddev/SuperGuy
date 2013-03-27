@@ -64,6 +64,7 @@ public:
 };
 
 class OverWorld:public stateMachine {
+public:
 	OverWorld(int);
 	~OverWorld();
 	void handle_events();
