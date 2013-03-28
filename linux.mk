@@ -1,7 +1,7 @@
 CC := gcc
 CPP := g++
-CFLAGS := -Wall -Werror -g `sdl2-config --cflags` -std=c11
-CPPFLAGS := -Wall -Werror -g `sdl2-config --cflags` -std=c++11
+CFLAGS := -Wall -g `sdl2-config --cflags` -std=c11
+CPPFLAGS := -Wall -g `sdl2-config --cflags` -std=c++11
 LFLAGS := `sdl2-config --libs` -lm -lSDL2_image
 
 OBJ := obj/linux/

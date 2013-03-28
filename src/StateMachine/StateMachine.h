@@ -35,7 +35,7 @@ public:
 	virtual void handle_events() = 0; ///Handle events for every state
 	virtual void logic() = 0; ///Handle Logic for each state
 	virtual void render() = 0; ///Handle rendering for each state
-	virtual ~stateMachine() = 0; ///Destructor for each state
+	virtual ~stateMachine() {} ///Destructor for each state
 };
 
 class Intro: public stateMachine {
@@ -100,9 +100,9 @@ public:
 };
 
 
-int stateID = STATE_NULL;
-int nextState = STATE_NULL;
-stateMachine *currentState = NULL;
+static int stateID = STATE_NULL;
+static int nextState = STATE_NULL;
+static stateMachine *currentState = NULL;
 
 void setNextState(int newState);	///Sets our next state
 void changeState();		///Changes State

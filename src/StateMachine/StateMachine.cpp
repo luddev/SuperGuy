@@ -47,3 +47,78 @@ void changeState() {
 		nextState = STATE_NULL;
 	}
 }
+
+Intro::Intro() {
+}
+
+Intro::~Intro() {
+}
+
+void Intro::handle_events() {
+}
+
+void Intro::logic() {
+}
+
+void Intro::render() {
+}
+
+Title::Title() {
+}
+
+Title::~Title() {
+}
+
+void Title::handle_events() {
+}
+
+void Title::logic() {
+}
+
+void Title::render() {
+}
+
+OverWorld::OverWorld(int int1) {
+}
+
+OverWorld::~OverWorld() {
+}
+
+void OverWorld::handle_events() {
+}
+
+void OverWorld::logic() {
+}
+
+void OverWorld::render() {
+}
+
+Stage1::Stage1() {
+}
+
+Stage1::~Stage1() {
+}
+
+void Stage1::handle_events() {
+}
+
+void Stage1::logic() {
+}
+
+void Stage1::render() {
+}
+
+GameOver::GameOver() {
+}
+
+GameOver::~GameOver() {
+}
+
+void GameOver::handle_events() {
+}
+
+void GameOver::logic() {
+}
+
+void GameOver::render() {
+}
