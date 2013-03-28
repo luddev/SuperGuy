@@ -16,6 +16,7 @@
 #ifndef STATEMACHINE_H_
 #define STATEMACHINE_H_
 #include<stdio.h>
+#include<SDL2/SDL.h>
 /// States for State Machine
 enum STATES {
 	STATE_NULL,	///NULL STATE
