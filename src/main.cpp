@@ -22,7 +22,7 @@
 #include <SDL2/SDL.h>
 #include "log.h"
 #include "engine/engine.h"
-#include "StateMachine/StateMachine.h"
+#include "engine/state/stateMachine.h"
 
 int main(int argc, char ** argv) {
 	log::open("log.txt");

@@ -40,7 +40,7 @@ bool log::open(const char * file) {
 	if (!fp) // If the file didn't exist
 		fp = fopen(file, "wt"); // Open it as writing and text.
 	if (!fp) {
-		error("Failed to open '%s', disregards saving log file.", file.c_str());
+		error("Failed to open '%s', disregards saving log file.", file);
 		return false;
 	}
 
