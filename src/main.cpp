@@ -5,6 +5,7 @@
  * Description : 
  * ============================================================================ */
 
+<<<<<<< HEAD
 /*! \mainpage SuperGuy
  *
  * \section intro_sec Introduction
@@ -23,20 +24,25 @@
 #include "log.h"
 #include "engine/engine.h"
 #include "engine/state/stateMachine.h"
+=======
+#include <SDL2/SDL.h>
+#include "Log.h"
+#include "Engine/Engine.h"
+>>>>>>> 2ed59a04090f2d4df9c4bff0d27bc4f4fcc3847f
 
 int main(int argc, char ** argv) {
-	log::open("log.txt");
+	Log::Open("log.txt");
 
 	try {
-		engineInstance = new engine();
+		EngineInstance = new Engine();
 
-		SDL_Delay(5 * 1000);
+		EngineInstance->Run();
 
-		delete engineInstance;
+		delete EngineInstance;
 	} catch (std::exception * e) {
-		if (engineInstance) // Checks if eng isn't NULL
-			delete engineInstance;
-		log::error("Engine crashed!");
+		if (EngineInstance) // Checks if eng isn't NULL
+			delete EngineInstance;
+		Log::Error("Engine crashed!");
 	}
 	 while( stateID != STATE_QUIT )
 	    {
@@ -55,6 +61,6 @@ int main(int argc, char ** argv) {
 	    }
 
 
-	log::close();
+	Log::Close();
 	return 0;
 }
