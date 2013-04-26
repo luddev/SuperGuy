@@ -10,7 +10,7 @@
 #include "../Log.h"
 #include <SDL2/SDL_image.h>
 
-Engine * EngineInstance;
+Engine * EngineInstance = NULL;
 
 void Engine::InitSDL() {
 	int ret = 0;
